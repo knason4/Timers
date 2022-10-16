@@ -32,7 +32,6 @@ function randomGame () {
     let randomNumber = 0;
     setInterval(function () {
         randomNumber = Math.random();
-        console.log(randomNumber);
         counter++;
         if(randomNumber > 0.75) {
             console.log(counter);
