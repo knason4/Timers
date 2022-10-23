@@ -7,11 +7,11 @@
 function countDown(number) {
     let n = number;
 
-    setInterval(function () {
+    const id = setInterval(function () {
         n--;
         if(n == 0) {
             console.log("DONE!");
-            clearInterval(1);
+            clearInterval(id);
         }
         while(n >= 1) {
             return console.log(n);
@@ -30,12 +30,12 @@ console.log the number of tries it took before we found a number greater than .7
 function randomGame () {
     let counter = 0;
     let randomNumber = 0;
-    setInterval(function () {
+    const id = setInterval(function () {
         randomNumber = Math.random();
         counter++;
         if(randomNumber > 0.75) {
             console.log(counter);
-            clearInterval(1);
+            clearInterval(id);
         }
     }, 1000);
 
